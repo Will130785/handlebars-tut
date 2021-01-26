@@ -1,0 +1,7 @@
+<h1>Welcome to the contact page</h1>
+
+{{#each lists as |xValue xKey|}}
+    {{#each xValue/items as |yValue yKey|}}
+        <p>{{yKey}}: {{yValue}}</p>
+    {{/each}}
+{{/each}}
